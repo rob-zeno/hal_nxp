@@ -55,7 +55,7 @@ extern "C"{
 #define MCAL_AR_RELEASE_MAJOR_VERSION     4
 #define MCAL_AR_RELEASE_MINOR_VERSION     7
 #define MCAL_AR_RELEASE_REVISION_VERSION  0
-#define MCAL_SW_MAJOR_VERSION             3
+#define MCAL_SW_MAJOR_VERSION             4
 #define MCAL_SW_MINOR_VERSION             0
 #define MCAL_SW_PATCH_VERSION             0
 

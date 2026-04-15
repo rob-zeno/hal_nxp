@@ -31,7 +31,7 @@ extern "C"
 #define LCU_IP_INIT_PBCFG_AR_RELEASE_MAJOR_VERSION      4
 #define LCU_IP_INIT_PBCFG_AR_RELEASE_MINOR_VERSION      7
 #define LCU_IP_INIT_PBCFG_AR_RELEASE_REVISION_VERSION   0
-#define LCU_IP_INIT_PBCFG_SW_MAJOR_VERSION              3
+#define LCU_IP_INIT_PBCFG_SW_MAJOR_VERSION              4
 #define LCU_IP_INIT_PBCFG_SW_MINOR_VERSION              0
 #define LCU_IP_INIT_PBCFG_SW_PATCH_VERSION              0
     /* Check if header file and Lcu_Ip_Types.h file are of the same vendor */
