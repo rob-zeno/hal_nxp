@@ -950,7 +950,11 @@ static status_t FLEXCAN_Reset(CAN_Type *base)
 
     /* Reset MCR register. */
 #if (defined(FSL_FEATURE_FLEXCAN_HAS_GLITCH_FILTER) && FSL_FEATURE_FLEXCAN_HAS_GLITCH_FILTER)
-    base->MCR |= CAN_MCR_WRNEN_MASK | CAN_MCR_WAKSRC_MASK | CAN_MCR_MAXMB((uint32_t)maxMB - 1U);
+    base->MCR |= CAN_MCR_WRNEN_MASK |
+#if !(defined(FSL_FEATURE_FLEXCAN_HAS_NO_SLFWAK_SUPPORT) && FSL_FEATURE_FLEXCAN_HAS_NO_SLFWAK_SUPPORT)
+                 CAN_MCR_WAKSRC_MASK |
+#endif
+                 CAN_MCR_MAXMB((uint32_t)maxMB - 1U);
 #else
     base->MCR |= CAN_MCR_WRNEN_MASK | CAN_MCR_MAXMB((uint32_t)maxMB - 1U);
 #endif
@@ -1253,8 +1257,10 @@ void FLEXCAN_Init(CAN_Type *base, const flexcan_config_t *pConfig, uint32_t sour
     mcrTemp = (pConfig->enableSelfWakeup) ? (mcrTemp | CAN_MCR_SLFWAK_MASK) : (mcrTemp & ~CAN_MCR_SLFWAK_MASK);
 #endif
 #if (defined(FSL_FEATURE_FLEXCAN_HAS_GLITCH_FILTER) && FSL_FEATURE_FLEXCAN_HAS_GLITCH_FILTER)
+#if !(defined(FSL_FEATURE_FLEXCAN_HAS_NO_SLFWAK_SUPPORT) && FSL_FEATURE_FLEXCAN_HAS_NO_SLFWAK_SUPPORT)
     mcrTemp = (kFLEXCAN_WakeupSrcFiltered == pConfig->wakeupSrc) ? (mcrTemp | CAN_MCR_WAKSRC_MASK) :
                                                                    (mcrTemp & ~CAN_MCR_WAKSRC_MASK);
+#endif
 #endif
 
 #if (defined(FSL_FEATURE_FLEXCAN_HAS_PN_MODE) && FSL_FEATURE_FLEXCAN_HAS_PN_MODE)
