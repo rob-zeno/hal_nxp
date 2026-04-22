@@ -482,7 +482,7 @@ void LPI2C_MasterGetDefaultConfig(lpi2c_master_config_t *masterConfig)
     masterConfig->busIdleTimeout_ns       = 0U; /* Set to 0 to disable the function */
     masterConfig->pinLowTimeout_ns        = 0U; /* Set to 0 to disable the function */
     // rob@zenomoto.com: we need large glitch filters in my dev board testing.
-    // TODO: EXPOSE THIS A CONFIG OPTION
+    // TODO: EXPOSE THIS AS A CONFIG OPTION
     masterConfig->sdaGlitchFilterWidth_ns = 500U; /* Set to 0 to disable the function */
     masterConfig->sclGlitchFilterWidth_ns = 500U; /* Set to 0 to disable the function */
     masterConfig->hostRequest.enable      = false;
