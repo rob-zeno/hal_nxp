@@ -160,8 +160,9 @@ typedef struct _lpi2c_master_config
     uint32_t baudRate_Hz;                /*!< Desired baud rate in Hertz. */
     uint32_t busIdleTimeout_ns;          /*!< Bus idle timeout in nanoseconds. Set to 0 to disable. */
     uint32_t pinLowTimeout_ns;           /*!< Pin low timeout in nanoseconds. Set to 0 to disable. */
-    uint8_t sdaGlitchFilterWidth_ns;     /*!< Width in nanoseconds of glitch filter on SDA pin. Set to 0 to disable. */
-    uint8_t sclGlitchFilterWidth_ns;     /*!< Width in nanoseconds of glitch filter on SCL pin. Set to 0 to disable. */
+	/* rob@zenomoto.com: increase this to a uint16_t so we can handle > 255 ns glitch widths */
+    uint16_t sdaGlitchFilterWidth_ns;    /*!< Width in nanoseconds of glitch filter on SDA pin. Set to 0 to disable. */
+    uint16_t sclGlitchFilterWidth_ns;    /*!< Width in nanoseconds of glitch filter on SCL pin. Set to 0 to disable. */
     struct
     {
         bool enable;                            /*!< Enable host request. */

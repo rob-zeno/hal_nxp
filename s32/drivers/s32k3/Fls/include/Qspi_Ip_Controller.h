@@ -31,7 +31,7 @@ extern "C"{
 #define QSPI_IP_CONTROLLER_AR_RELEASE_MAJOR_VERSION_H        4
 #define QSPI_IP_CONTROLLER_AR_RELEASE_MINOR_VERSION_H        7
 #define QSPI_IP_CONTROLLER_AR_RELEASE_REVISION_VERSION_H     0
-#define QSPI_IP_CONTROLLER_SW_MAJOR_VERSION_H                3
+#define QSPI_IP_CONTROLLER_SW_MAJOR_VERSION_H                4
 #define QSPI_IP_CONTROLLER_SW_MINOR_VERSION_H                0
 #define QSPI_IP_CONTROLLER_SW_PATCH_VERSION_H                0
 /*==================================================================================================

@@ -38,7 +38,7 @@ extern "C"
 #define EMIOS_MCL_IP_INIT_PBCFG_AR_RELEASE_MAJOR_VERSION      4
 #define EMIOS_MCL_IP_INIT_PBCFG_AR_RELEASE_MINOR_VERSION      7
 #define EMIOS_MCL_IP_INIT_PBCFG_AR_RELEASE_REVISION_VERSION   0
-#define EMIOS_MCL_IP_INIT_PBCFG_SW_MAJOR_VERSION              3
+#define EMIOS_MCL_IP_INIT_PBCFG_SW_MAJOR_VERSION              4
 #define EMIOS_MCL_IP_INIT_PBCFG_SW_MINOR_VERSION              0
 #define EMIOS_MCL_IP_INIT_PBCFG_SW_PATCH_VERSION              0
     /*==================================================================================================

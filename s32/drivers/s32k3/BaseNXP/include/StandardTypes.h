@@ -47,7 +47,7 @@ extern "C"{
 #define STD_AR_RELEASE_MAJOR_VERSION      4
 #define STD_AR_RELEASE_MINOR_VERSION      7
 #define STD_AR_RELEASE_REVISION_VERSION   0
-#define STD_SW_MAJOR_VERSION              3
+#define STD_SW_MAJOR_VERSION              4
 #define STD_SW_MINOR_VERSION              0
 #define STD_SW_PATCH_VERSION              0
 

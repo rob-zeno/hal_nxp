@@ -26,7 +26,7 @@ extern "C"
 #define TRGMUX_IP_INIT_PBCFG_AR_RELEASE_MAJOR_VERSION      4
 #define TRGMUX_IP_INIT_PBCFG_AR_RELEASE_MINOR_VERSION      7
 #define TRGMUX_IP_INIT_PBCFG_AR_RELEASE_REVISION_VERSION   0
-#define TRGMUX_IP_INIT_PBCFG_SW_MAJOR_VERSION              3
+#define TRGMUX_IP_INIT_PBCFG_SW_MAJOR_VERSION              4
 #define TRGMUX_IP_INIT_PBCFG_SW_MINOR_VERSION              0
 #define TRGMUX_IP_INIT_PBCFG_SW_PATCH_VERSION              0
     /*==================================================================================================

@@ -39,7 +39,7 @@ extern "C"{
 #define ADC_SAR_IP_AR_RELEASE_MAJOR_VERSION_CFGDEFINES       4
 #define ADC_SAR_IP_AR_RELEASE_MINOR_VERSION_CFGDEFINES       7
 #define ADC_SAR_IP_AR_RELEASE_REVISION_VERSION_CFGDEFINES    0
-#define ADC_SAR_IP_SW_MAJOR_VERSION_CFGDEFINES               3
+#define ADC_SAR_IP_SW_MAJOR_VERSION_CFGDEFINES               4
 #define ADC_SAR_IP_SW_MINOR_VERSION_CFGDEFINES               0
 #define ADC_SAR_IP_SW_PATCH_VERSION_CFGDEFINES               0
 /*==================================================================================================

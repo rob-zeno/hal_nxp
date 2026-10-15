@@ -37,7 +37,7 @@ extern "C"{
 #define OSIF_CFG_AR_RELEASE_MAJOR_VERSION     4
 #define OSIF_CFG_AR_RELEASE_MINOR_VERSION     7
 #define OSIF_CFG_AR_RELEASE_REVISION_VERSION  0
-#define OSIF_CFG_SW_MAJOR_VERSION             3
+#define OSIF_CFG_SW_MAJOR_VERSION             4
 #define OSIF_CFG_SW_MINOR_VERSION             0
 #define OSIF_CFG_SW_PATCH_VERSION             0
 

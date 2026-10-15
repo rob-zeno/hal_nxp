@@ -48,7 +48,7 @@ extern "C"{
 #define COMPILER_AR_RELEASE_MAJOR_VERSION       4
 #define COMPILER_AR_RELEASE_MINOR_VERSION       7
 #define COMPILER_AR_RELEASE_REVISION_VERSION    0
-#define COMPILER_SW_MAJOR_VERSION               3
+#define COMPILER_SW_MAJOR_VERSION               4
 #define COMPILER_SW_MINOR_VERSION               0
 #define COMPILER_SW_PATCH_VERSION               0
 /**@}*/
